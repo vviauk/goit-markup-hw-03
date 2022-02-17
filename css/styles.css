@@ -33,6 +33,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* «B10» Для розташування елементів використовується Flexbox, а саме у шапці, навігації, списках.
+
+«B11» Фінальні розміри блоків в браузері відповідають макету.
+
+«B12» В елементів відсутня фіксована висота, вона визначається їх контентом.
+
+«B13» У хедера є нижня рамка, необхідно сильно наблизити макет, щоб побачити її.
+
+«B16» Для побудови сіток використовується техніка, що описана у конспекті і відео-майстерні.
+
+«B17» У картках на сторінці Портфоліо є рамка (властивість border), але тільки у нижній частині картки. */
 h2,
 h3,
 p {
@@ -47,6 +58,54 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-list {
+  margin-right: 50px;
+  min-width: 49px;
+}
+.nav {
+  display: flex;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-wrapper {
+  margin-left: auto;
+}
+.phone {
+  margin-left: 50px;
+}
+.logo {
+  /* align-items: center; */
+  margin-right: 93px;
+}
+.header-list:last-child {
+  margin-right: 0;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+/* .contacts link {
+  display: flex;
+  margin-right: 50px;
+} */
+/* .page-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+} */
+/* .header-list {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 .link {
   text-decoration: none;
 }
@@ -133,7 +192,6 @@ p {
   background-color: var(--secondary-background-color);
   font-weight: 700;
   line-height: 1.88;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -145,58 +203,125 @@ p {
 .visually-hidden {
   display: none;
 }
+
+.about-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+.about-list {
+  /* padding-right: 30px; */
+}
+
 .advantages {
-  display: inline-block;
-  margin-top: 94px;
-  margin-bottom: 0px;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 10px;
+  margin-right: 30px;
   font-weight: 700;
-  font-size: 14px;
   text-transform: uppercase;
 }
 .advantages-description {
-  display: inline-block;
+  display: flex;
+  min-width: 270px;
+  margin-right: 30px;
   color: rgba(117, 117, 117, 1);
+  font-size: 14px;
   line-height: 1.5;
 }
+.advantages:last-child {
+  margin-right: 0;
+}
+
+
 /* main section 2 */
 .jobs {
-  /* text-align: center; */
+  text-align: center;
+  padding-bottom: 94px;
 }
+
+.about-wrapper {
+  display: flex;
+}
+.jobs-list {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+}
+
 .we-do,
 .our-team {
   display: inline-block;
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 0;
   padding-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  /* margin-bottom: 50px; */
 }
-/* .item:not(:ntn-last-child) {
-  margin-bottom: 0;
-
-} */
 
 /* main section 3 */
+
 .team {
-  /* text-align: center; */
+  text-align: center;
+  padding-bottom: 94px;
   background-color: rgba(245, 244, 250, 1);
 }
+/* .team-list {
+  display: flex;
+} */
+
+.team-main-list {
+  padding-right: 0;
+  display: flex;
+  
+}
+.team-list {
+  margin-right: 30px;
+  margin-left: 0px;
+}
+
+.team-list:last-child{
+  margin: 0;
+}
+
+
+
 .actors {
+  padding-top: 30px;
   font-weight: 500;
   line-height: 1.19;
 }
 .actors-roles {
+  padding-top: 10px;
+  padding-bottom: 30px;
   color: rgba(117, 117, 117, 1);
   font-weight: normal;
 }
 /* footer */
 .footer {
+  /* margin-top: 94px; */
   background-color: var(--hero-footer-background-color);
   color: var(--secondary-text-color);
 }
+
+.footer-logo {
+  display: flex;
+  padding-top: 60px;
+}
+/* .footer-address {
+  padding-top: 60px;
+} */
+.footer-email {
+  display: flex;
+  padding-top: 9px;
+}
+.footer-phone {
+  display: inline-block;
+  padding-top: 9px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   font-style: normal;
 }

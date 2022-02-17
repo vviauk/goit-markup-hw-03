@@ -23,19 +23,23 @@
 
   <body>
     <!-- Заголовок -->
-    <header class="header">
-      <nav class="nav">
-        <a class="logo link" href="./index.html">Web<span class="logo-type">Studio</span></a>
-        <ul class="nav-list">
-          <li class="header-list"><a class="nav-link link" href="./index.html">Студия</a></li>
-          <li class="header-list">
-            <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="header-list"><a class="nav-link link" href="http://">Контакты</a></li>
-        </ul>
-      </nav>
-      <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="logo link" href="./index.html">Web<span class="logo-type">Studio</span></a>
+          <ul class="nav-list">
+            <li class="header-list"><a class="nav-link link" href="./index.html">Студия</a></li>
+            <li class="header-list">
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-list"><a class="nav-link link" href="http://">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-wrapper">
+          <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="contacts link phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
+      </div>
     </header>
     <!-- уникальный контент -->
     <main class="main">
@@ -56,7 +60,8 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="about-main-list">
-            <li class="about-list">
+            <div class="container about-container">
+              <li class="about-list">
               <h3 class="advantages">Внимание к деталям</h3>
               <p class="advantages-description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
@@ -80,6 +85,8 @@
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
+            </div>
+            
           </ul>
         </div>
       </section>
@@ -88,15 +95,17 @@
         <div class="container">
           <h2 class="we-do">Чем мы занимаемся</h2>
           <ul class="jobs-main-list">
-            <li class="jobs-list">
-              <img src="./images/print.jpg" alt="Печать" width="370" height="294" />
-            </li>
-            <li class="jobs-list">
-              <img src="./images/phone.jpg" alt="Телефон" width="370" height="294" />
-            </li>
-            <li class="jobs-list">
-              <img src="./images/tablet.jpg" alt="Планшет" width="370" height="294" />
-            </li>
+            <div class="about-wrapper">
+              <li class="jobs-list">
+                <img src="./images/print.jpg" alt="Печать" width="370" height="294" />
+              </li>
+              <li class="jobs-list">
+                <img src="./images/phone.jpg" alt="Телефон" width="370" height="294" />
+              </li>
+              <li class="jobs-list">
+                <img src="./images/tablet.jpg" alt="Планшет" width="370" height="294" />
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -104,28 +113,28 @@
       <section class="team">
         <div class="container">
           <h2 class="our-team">Наша команда</h2>
-          <ul class="team-main-list">
-            <li class="team-list">
-              <img src="./images/igor-d.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-              <h3 class="actors">Игорь Демьяненко</h3>
-              <p class="actors-roles">Product Designer</p>
-            </li>
-            <li class="team-list">
-              <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
-              <h3 class="actors">Ольга Репина</h3>
-              <p class="actors-roles">Frontend Developer</p>
-            </li>
-            <li class="team-list">
-              <img src="./images/mykola.jpg" alt="Николай Тарасов" width="270" height="260" />
-              <h3 class="actors">Николай Тарасов</h3>
-              <p class="actors-roles">Marketing</p>
-            </li>
-            <li class="team-list">
-              <img src="./images/myhailo.jpg" alt="Михаил Ермаков" width="270" height="260" />
-              <h3 class="actors">Михаил Ермаков</h3>
-              <p class="actors-roles">UI Designer</p>
-            </li>
-          </ul>
+            <ul class="team-main-list">
+              <li class="team-list">
+                <img src="./images/igor-d.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                <h3 class="actors">Игорь Демьяненко</h3>
+                <p class="actors-roles">Product Designer</p>
+              </li>
+              <li class="team-list">
+                <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
+                <h3 class="actors">Ольга Репина</h3>
+                <p class="actors-roles">Frontend Developer</p>
+              </li>
+              <li class="team-list">
+                <img src="./images/mykola.jpg" alt="Николай Тарасов" width="270" height="260" />
+                <h3 class="actors">Николай Тарасов</h3>
+                <p class="actors-roles">Marketing</p>
+              </li>
+              <li class="team-list">
+                <img src="./images/myhailo.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                <h3 class="actors">Михаил Ермаков</h3>
+                <p class="actors-roles">UI Designer</p>
+              </li>
+            </ul>
         </div>
       </section>
     </main>
