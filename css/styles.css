@@ -356,8 +356,7 @@ p {
   padding-right: 0;
   margin-bottom: 30px;
   margin-right: 30px;
-  /* border: 1px solid rgba(238, 238, 238, 1); */
-  /* border-top: 0; */
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
 .portfolio-img:nth-child(3n) {
