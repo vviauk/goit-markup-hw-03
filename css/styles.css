@@ -227,8 +227,7 @@ p {
 .we-do,
 .our-team {
   display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -255,23 +254,20 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team {
-  margin-bottom: 50px;
-  padding-bottom: 0;
-}
-
 .team-list:last-child {
   margin: 0;
 }
+.actor {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .actors {
-  padding-top: 30px;
   font-weight: 500;
   line-height: 1.19;
 }
 .actors-roles {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
   color: rgba(117, 117, 117, 1);
   font-weight: normal;
 }
@@ -289,14 +285,14 @@ p {
 }
 .footer-email {
   display: flex;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-phone {
   display: inline-block;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-style: normal;
 }
 .footer-address {
@@ -317,7 +313,6 @@ p {
 
 /* portfolio page*/
 
-
 .main-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -327,7 +322,6 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-
 }
 
 .main-btn {
@@ -386,6 +380,7 @@ p {
 
 .portfolio-frame {
   padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: 0;
 }
@@ -393,7 +388,7 @@ p {
 .portfolio-title {
   padding-right: 24px;
   padding-left: 24px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -402,7 +397,6 @@ p {
 .portfolio-text {
   padding-right: 24px;
   padding-left: 24px;
-  padding-bottom: 20px;
   color: rgba(117, 117, 117, 1);
   line-height: 1.88;
 }
