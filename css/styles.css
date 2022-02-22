@@ -383,11 +383,11 @@ p {
   padding-bottom: 20px;
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: 0;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .portfolio-title {
-  padding-right: 24px;
-  padding-left: 24px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -395,8 +395,6 @@ p {
   letter-spacing: 0.06em;
 }
 .portfolio-text {
-  padding-right: 24px;
-  padding-left: 24px;
   color: rgba(117, 117, 117, 1);
   line-height: 1.88;
 }
